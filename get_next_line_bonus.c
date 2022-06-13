@@ -6,7 +6,7 @@
 /*   By: shima <shima@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 20:48:19 by shima             #+#    #+#             */
-/*   Updated: 2022/06/13 12:38:16 by shima            ###   ########.fr       */
+/*   Updated: 2022/06/13 13:00:22 by shima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*get_next_line(int fd)
 	if (errno != 0)
 		return (NULL);
 	line = NULL;
-	while (!line_save_factory(fd, buf, &line, &save))
+	while (!line_save_factory(fd, buf, &line, &save[fd]))
 		;
 	free(buf);
 	if (errno != 0)
