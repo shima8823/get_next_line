@@ -6,7 +6,7 @@
 /*   By: shima <shima@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 10:29:04 by shima             #+#    #+#             */
-/*   Updated: 2022/06/13 12:30:02 by shima            ###   ########.fr       */
+/*   Updated: 2022/08/13 08:37:50 by shima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <limits.h>
 # include <stdbool.h>
 # include <errno.h>
+# include <stdio.h>
 
 char	*get_next_line(int fd);
 char	*strjoin_until_c(char const *s1, char const *s2, char c);
