@@ -6,7 +6,7 @@
 /*   By: shima <shima@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 20:48:19 by shima             #+#    #+#             */
-/*   Updated: 2022/08/15 10:28:33 by shima            ###   ########.fr       */
+/*   Updated: 2022/08/15 10:45:06 by shima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ static void	when_save_exists(char *buf, char **line, char **save)
 	char	*tmp;
 
 	i = str_c_len(*save, '\n');
-	if ft_strchr(*save, '\n') || (*save)[i])
+	if (ft_strchr(*save, '\n') || (*save)[i])
 	{
 		*line = strdup_until_c(*save, '\n');
 		tmp = *save;
